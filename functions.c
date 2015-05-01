@@ -25,7 +25,6 @@ void Decode(int instruction, short* opcode, short* operator){
 		*operator = -*operator;
 	}
 	for(i=16; i<32; ++i){
-
 		*opcode += ((instruction & aux) / 65536);
 		aux <<= 1;
 	}
