@@ -472,7 +472,7 @@ void Verbose(NES* emulator, short opcode, short operator){
 			break;
 
 		case 2:
-			printf("WRITE");
+			printf("WRITE  ");
 			DUMP(emulator);
 			++emulator->PC;
 			WRITE(emulator);
@@ -935,25 +935,4 @@ void Execute(NES* emulator, short opcode, short operator){
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
